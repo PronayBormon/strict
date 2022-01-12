@@ -1,0 +1,323 @@
+/* font-family: 'Lato', sans-serif; */
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+background-color: #f6f9f9;
+}
+
+header ul li a{
+    color: #2d3950 !important;
+    text-transform: uppercase;
+}
+header ul li a:hover{
+    color: blue !important;
+    text-transform: uppercase;
+}
+/* bannar part start here  */
+.bannar{
+    background-image: url(../images/bannar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bannar_row{
+    align-items: center;
+}
+.bannar h1{
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.bannar span{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #15a4fa;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+.bannar p{
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+}
+.bannar input{
+    background: transparent;
+    border: none;
+    border: 1px solid #15a4fa;
+    padding: 5px 10px;
+    text-transform: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+.bannar input:hover{
+    background-color:#348cc4 ;
+    box-shadow: 1px 1px 10px #15a4fa;
+    text-transform: none;
+    font-size: 16px;
+    transition: .4s all ease-in-out;
+}
+.icon{
+    
+    color: #fff;        
+    position: absolute;        
+    bottom: 10%;        
+    left: 50%;        
+    transform: translate(-50%, -10%);        
+    font-size: 25px;
+    animation: updown .4s infinite linear;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        bottom: 15%;
+    } 
+    50%{
+        bottom: 10%;
+    }
+}
+/* bannar part end here  */
+.article{
+    background-color: #f6f9f9;
+}
+.article h1{
+
+    font-size: 30px;
+}
+.article p{
+
+    font-size: 16px;
+    color: #999999;
+}
+.feture{
+
+}
+
+.feture_icon{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+53,5fc3ff+54,5fc3ff+100 */
+    /* Old browsers */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+
+    background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+
+    background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+}
+.feture h2{
+    font-size: 30px;
+    color: #2d3950;
+}
+.feture p{
+    font-size: 16px;
+    color: #a0a0a0;
+    letter-spacing: 1px;
+}
+.showcase{
+    background-color: #f6f9f9;
+    padding: 10px 0px;
+}
+.showcase h1{
+padding-top: 35px;
+font-size: 30px;
+}
+.showcase p{
+font-size: 16px;
+}
+.item{
+    position: relative;
+
+}
+.item::before{
+    content: '';
+    background-color: #209eef;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    opacity: 0.8;
+    left: 0px;
+    top:0px;
+    transition: .4s all ease-in-out;
+}
+.item:hover::before{
+    width: 50%;
+}
+
+/* after effect start here  */
+.item::after{
+    content: '';
+    background-color: #209eef;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    opacity: 0.8;
+    right: 0px;
+    top:0px;
+    transition: .4s all ease-in-out;
+}
+.item:hover::after{
+    width: 50%;
+}
+/* after effect end here  */
+
+
+/* zoom and link action start here  */
+.action{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin: 0px;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.action ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.action ul li{
+    border: 1px solid #fff;
+    margin: 5px;
+}
+.action ul li i{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+}
+.item:hover .action{
+    opacity: 1;
+    top: 50%;
+}
+
+/* form part start here  */
+.form_part{
+    background-image: url(../images/form_bacground.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+   
+}
+.form_part::before{
+    content: "Pronay";
+    background-color: #2d364a;
+    opacity: .8;
+    height: 100%;
+    width: 100%;
+   position: absolute; 
+   z-index: -1;
+}
+
+
+
+.form_part h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+.form_part p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: #fff;
+}
+.form_part input{
+    background-color: transparent;
+    color: #fff;
+}
+.form_part textarea{
+    background-color: transparent;
+    color: #ffffff;
+}
+.submit{    
+    border: none;    
+    background: transparent;    
+    border: 1px solid #209eef;    
+    padding: 5px 20px;    
+    text-transform: capitalize;
+}
+.form input:focus{
+    background: transparent;
+    color: #ffffff;
+}
+.t_text:focus{
+    background: transparent;
+    color: #ffffff;
+}
+
+/* form part end here  */
+
+/* footer part start here  */
+footer{
+    background: #f9f9f9;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15vh;
+}
+.foot h2{
+    color: #999999;
+    font-size: 16px;
+    margin: 0px;
+}
+.foot ul{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    margin-left: 8px;
+}
+.foot ul li{
+
+}
+
+.foot ul li a{
+    border: 1px solid #15a4fa;
+    margin: 1px;
+    background: #15a4fa;
+    border-radius: 3px;
+}
+.foot ul li a i{    
+    height: 20px;    
+    width: 20px;    
+    text-align: center;    
+    color: #fff;
+}
+
+/* footer part end here  */
+
